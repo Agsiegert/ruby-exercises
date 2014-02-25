@@ -9,8 +9,8 @@ class ShovelArrayTest < Minitest::Homework
   def test_array_equality
     a1 = []
     a2 = []
-    maybe a1.object_id == a2.object_id
-    maybe a1 == a2
+    refute a1.object_id == a2.object_id
+    assert a1 == a2
   end
 
   def test_shovel_into_array
